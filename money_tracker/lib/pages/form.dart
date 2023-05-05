@@ -194,9 +194,12 @@ class _MyFormPageState extends State<MyFormPage> {
                                     shrinkWrap: true,
                                     children: <Widget>[
                                       Center(child: const Text('Informasi Data')),
-                                      Text('Nama Transaksi: $_namaTransaksi'),
                                       SizedBox(height: 20),
                                       // TODO: Munculkan informasi yang didapat dari form
+                                      Text('Nama Transaksi: $_namaTransaksi'),
+                                      Text('Jenis: $tipeTransaksi'),
+                                      Text('Total: $jumlahTransaksi'),
+                                      Text('Deskripsi: $_deskripsiTransaksi'),
                                       TextButton(
                                         onPressed: () {
                                           Navigator.pop(context);
