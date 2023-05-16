@@ -2,8 +2,11 @@ import 'package:money_tracker/pages/transaction.dart';
 import 'package:money_tracker/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'package:pbp_django_auth/pbp_django_auth.dart';
 import 'package:provider/provider.dart';
+
+import 'dart:convert' as convert;
 
 
 class MyFormPage extends StatefulWidget {
@@ -116,13 +119,13 @@ class _MyFormPageState extends State<MyFormPage> {
                       // Menambahkan behavior saat jumlah diketik
                       onChanged: (String? value) {
                         setState(() {
-                          jumlahTransaksi = double.parse(value!);
+                          jumlahTransaksi = int.parse(value!);
                         });
                       },
                       // Menambahkan behavior saat data disimpan
                       onSaved: (String? value) {
                         setState(() {
-                          jumlahTransaksi = double.parse(value!);
+                          jumlahTransaksi = int.parse(value!);
                         });
                       },
                       // Validator sebagai validasi form
