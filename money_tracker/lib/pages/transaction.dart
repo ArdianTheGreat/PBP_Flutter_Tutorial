@@ -16,7 +16,7 @@ class _TransactionPageState extends State<TransactionPage> {
 Future<List<TransactionRecord>> fetchTransactionRecord() async {
     // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
     var url = Uri.parse(
-        'https://<URL_APP_KAMU>/tracker/json/');
+        'https://ardian-tutorial-pbp.domcloud.io/tracker/json/');
     var response = await http.get(
         url,
         headers: {

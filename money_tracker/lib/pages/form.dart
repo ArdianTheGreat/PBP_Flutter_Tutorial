@@ -187,7 +187,7 @@ class _MyFormPageState extends State<MyFormPage> {
                           // Kirim ke Django dan tunggu respons
                           // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
                         final response = await request.postJson(
-                        "https://<URL_APP_KAMU>/tracker/create-flutter/",
+                        "https://ardian-tutorial-pbp.domcloud.io/tracker/create-flutter/",
                         convert.jsonEncode(<String, String>{
                           'name': _namaTransaksi,
                           'type': tipeTransaksi,
